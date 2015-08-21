@@ -6,7 +6,7 @@ inhibit_all_warnings!
 
 xcodeproj 'MyProject'
 
-pod  'ObjectiveSugar', '~> 0.5'
+pod    'ObjectiveSugar', '~> 0.5'
 pod 'Artsy+UILabels'  , '~> 1.0'
 
 target :test do
