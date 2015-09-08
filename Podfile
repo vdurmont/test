@@ -12,10 +12,6 @@ pod 'Artsy+UILabels'  , '~> 1.0'
 target :test do
     pod 'AFNetworking'
     pod 'OCMock',   '~> 2.0.1'
-    pod 'TestPath',  :path => 'file:../here'
-    pod 'TestGit1', :git =>  'git://github.com/vdurmont/test'
-    pod 'TestGit2', :git =>  'http://github.com/vdurmont/test'
-    pod 'TestSubspec', :path => 'file:../here', :subspecs => ['Super', 'Test']
 end
 
 post_install do |installer|
