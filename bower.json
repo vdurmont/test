@@ -6,7 +6,7 @@
     "sass/motion.scss"
   ],
   "dependencies": {
-    "get-size": "~1.2.2",
+    "get-size": "~1.2.4",
     "eventEmitter": "~4.2.11"
   },
   "devDependencies": {
