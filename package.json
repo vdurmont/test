@@ -1,0 +1,41 @@
+{
+  "name": "dependencies.co-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js",
+    "process-project": "npm run flow && npm run build && node process_project.js",
+    "build": "babel src/ -d dist/",
+    "flow": "flow",
+    "schema": "babel-node updateSchema.js",
+    "start-dev": "npm run flow && npm run build && npm start",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/auth-oauth-app": "^2.0.2",
+    "@octokit/graphql": "^4.0.0",
+    "@octokit/rest": "^16.28.9",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "express-jwt": "^5.3.1",
+    "graphql": "^14.5.3",
+    "graphql-relay": "^0.6.0",
+    "promise-mysql": "^4.1.0",
+    "sprintf-js": "^1.1.2",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.4.4",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "flow-bin": "^0.106.1",
+    "fs": "0.0.1-security",
+    "jest": "^24.9.0"
+  }
+}
